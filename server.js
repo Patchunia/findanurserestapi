@@ -36,4 +36,7 @@ require('./app/routes/note.routes.js')(app);
 
 // listen for requests
 //var port = process.env.PORT || 1337;
-app.listen(1337);
+// listen for requests
+app.listen(1337, () => {
+    console.log("Server is listening on port 3000");
+});
