@@ -35,5 +35,5 @@ app.get('/', (req, res) => {
 require('./app/routes/note.routes.js')(app);
 
 // listen for requests
-//var port_number = server.listen(process.env.PORT || 3000);
-app.listen(process.env.PORT);
+var port = process.env.PORT || 1337;
+app.listen(port);
